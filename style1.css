@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.w-100 {
+  height: 100vh;
+  object-fit: cover;
+}
+.carousel-item {
+  text-align: center;
+  height: 100vh;
+}
+.carousel-caption {
+  padding: 20px;
+  margin-bottom: 250px;
+  z-index: 2;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* float */
+
+.img-top {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  border: 2px solid black;
+}
+.img-paragraph {
+  border: 1px solid black;
+  font-size: 25px;
+  font-style: italic;
+}
+/* service */
+#service {
+  text-align: center;
+}
+
+#service h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.card {
+  text-align: center;
+  margin: auto;
+}
+
+/* .card-img-top {
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  border-radius: 8px;
+} */
+.card-title {
+  font-size: 30px;
+}
+/* team */
+.team-img-top {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  max-width: 100%;
+  border-radius: 100%;
+}
+.team-icon {
+  font-size: 40px;
+}
+/* activities */
+#activity .card {
+  /* width: 282px */
+  position: relative;
+  border: 1px solid rgb(247, 218, 3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+#activity img {
+  max-width: 100%;
+  border: 1px solid rgb(247, 218, 3);
+  border-radius: 8px;
+}
+
+.intro {
+  height: 45px;
+  /* width: 280px; */
+  padding: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 1px;
+  background: rgb(27, 27, 27, 0.5);
+  color: white;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+#activity p {
+  font-size: 15px;
+  margin: 10px;
+}
+#activity .card:hover .intro {
+  cursor: pointer;
+  height: 150px;
+  background: rgb(41, 40, 40);
+  overflow: auto;
+}
+
+/* courses */
+.courses-card {
+  background-image: url(img/courses-bg.jpg);
+  background-repeat: no-repeat;
+  height: 295px;
+}
+.courses-card-img {
+  width: 300px;
+  height: 295px;
+}
+.courses-brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+.courses-paragraph-one {
+  font-size: 30px;
+  font-weight: bold;
+}
