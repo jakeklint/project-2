@@ -79,7 +79,8 @@
 /* activities */
 #activity .card {
   position: relative;
-  height: 300px;
+
+  height: 280px;
   border: 1px solid rgb(247, 218, 3);
   border-radius: 8px;
   overflow: hidden;
@@ -88,6 +89,7 @@
   max-width: 100%;
   border: 1px solid rgb(247, 218, 3);
   border-radius: 8px;
+  height: 280px;
 }
 
 .intro {
@@ -153,4 +155,13 @@
   width: 200px;
   height: 200px;
 }
-/* form */
+/* footer */
+footer a {
+  color: black;
+  text-decoration: none;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
