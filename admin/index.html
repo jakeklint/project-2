@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>NovaTech University</title>
+    <link rel="icon" href="img/fav-img.webp" class="rounded-circle" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="nav-section" class="col-2">
+          <!-- Logo and heading -->
+          <h2 class="py-2 text-center">
+            <i class="bi bi-amd text-info"></i
+            ><span class="d-none d-lg-inline text-light">Admin</span>
+          </h2>
+          <!-- Admin profile -->
+          <div class="text-center">
+            <img src="img/admin-1.avif" alt="" class="rounded-circle" />
+            <h3 class="text-info">Mr.Bing</h3>
+            <p class="text-light">Principal</p>
+          </div>
+          <!-- listgroup -->
+          <div class="list-group text-center text-lg-start">
+            <a href="#" class="list-group-item list-group-item-action active">
+              <i class="fas fa-home me-2"></i>
+              <span class="d-none d-lg-inline">Dashboard</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-users me-2"></i>
+              <span class="d-none d-lg-inline">Contacts</span>
+              <span
+                class="d-none d-lg-inline badge bg-danger rounded-pill float-end"
+                >20</span
+              >
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-coin"></i>
+              <span class="d-none d-lg-inline">Finance</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-lock-fill"></i>
+              <span class="d-none d-lg-inline">Authentication</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-flag me-2"></i>
+              <span class="d-none d-lg-inline">Reports</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-gear-fill"></i>
+              <span class="d-none d-lg-inline">Setting</span>
+            </a>
+          </div>
+        </nav>
+        <main class="col-10">
+          <nav class="navbar">
+            <div class="flex-fill">
+              <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-1"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-info" type="submit">
+                      <i class="bi bi-search text-light"></i>
+                    </button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+
+            <div class="navbar nav">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle text-info"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fas fa-user-circle text-info"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item">User Profile</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Logout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="bi bi-bell-fill text-info"></i
+                ></a>
+              </li>
+            </div>
+          </nav>
+          <div class="row flex-column flex-lg-row m-2">
+            <div class="col mb-2">
+              <div class="card" style="background-color: rgb(217, 247, 47)">
+                <div class="card-body row">
+                  <div class="col-2 icon px-2 my-auto">
+                    <i class="bi bi-people-fill text-info"></i>
+                  </div>
+                  <div class="col">
+                    <h6>Total Students</h6>
+                    <h5>3280</h5>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar w-75 bg-info"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-2">
+              <div class="card" style="background-color: rgb(59, 236, 74)">
+                <div class="card-body row">
+                  <div class="col-2 icon px-2 my-auto">
+                    <i class="bi bi-person-fill text-info"></i>
+                  </div>
+                  <div class="col">
+                    <h6>New Students</h6>
+                    <h5>300</h5>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar w-25 bg-info"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-2">
+              <div class="card" style="background-color: rgb(251, 94, 46)">
+                <div class="card-body row">
+                  <div class="col-2 icon px-2 my-auto">
+                    <i class="bi bi-book-half text-info"></i>
+                  </div>
+                  <div class="col">
+                    <h6>Total Course</h6>
+                    <h5>20</h5>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar w-25 bg-info"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-color: rgb(247, 214, 47)">
+                <div class="card-body row">
+                  <div class="col-2 icon px-2 my-auto">
+                    <i class="bi bi-people-fill text-info"></i>
+                  </div>
+                  <div class="col">
+                    <h6>Fee Collextion</h6>
+                    <h5>328000</h5>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar w-50 bg-info"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row flex-column flex-lg-row mt-4 mx-2">
+            <div class="col mb-2">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    id="myChart"
+                    style="width: 100%; max-width: 600px; height: 250px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    id="myChartline"
+                    style="width: 100%; max-width: 600px; height: 250px"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row flex-column flex-lg-row mt-4 mx-2">
+            <!-- table -->
+            <div class="col mb-2">
+              <div class="card" style="height: 280px">
+                <div class="card-body">
+                  <h4>Popular Courses</h4>
+                  <table class="table table-info">
+                    <thead>
+                      <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">View</th>
+                        <th scope="col">Attend</th>
+                        <th scope="col">Income</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Science</th>
+                        <td><i class="bi bi-eye-fill text-info"></i>5320</td>
+                        <td>
+                          <i class="bi bi-bookmark-check-fill text-success"></i
+                          >2489
+                        </td>
+                        <td><i class="bi bi-coin text-warning"></i>$13456</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mathematic</th>
+                        <td><i class="bi bi-eye-fill text-info"></i>5320</td>
+                        <td>
+                          <i class="bi bi-bookmark-check-fill text-success"></i
+                          >2489
+                        </td>
+                        <td><i class="bi bi-coin text-warning"></i>$13456</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Physics</th>
+                        <td><i class="bi bi-eye-fill text-info"></i>5320</td>
+                        <td>
+                          <i class="bi bi-bookmark-check-fill text-success"></i
+                          >2489
+                        </td>
+                        <td><i class="bi bi-coin text-warning"></i>$13456</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Coding</th>
+                        <td><i class="bi bi-eye-fill text-info"></i>5320</td>
+                        <td>
+                          <i class="bi bi-bookmark-check-fill text-success"></i
+                          >2489
+                        </td>
+                        <td><i class="bi bi-coin text-warning"></i>$13456</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="height: 280px">
+                <div class="card-body">
+                  <h3>Progress</h3>
+                  <small class="text-muted">Sports</small>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar bg-info" style="width: 25%"></div>
+                  </div>
+                  <small class="text-muted">Teaching</small>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div
+                      class="progress-bar bg-success"
+                      style="width: 50%"
+                    ></div>
+                  </div>
+                  <small class="text-muted">Activies</small>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+                  <small class="text-muted">Average</small>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 10px"
+                  >
+                    <div
+                      class="progress-bar bg-warning"
+                      style="width: 75%"
+                    ></div>
+                  </div>
+                  <p class="text-center mt-2 p-2 text-muted">
+                    Once in Every year
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+          ["Contry", "Mhl"],
+          ["Basket Ball", 54.8],
+          ["Football", 48.6],
+          ["Swimming", 44.4],
+          ["Rugby Ball", 23.9],
+          ["Chess", 14.5],
+        ]);
+
+        // Set Options
+        const options = {
+          title: "School Performents",
+        };
+
+        // Draw
+        const chart = new google.visualization.PieChart(
+          document.getElementById("myChart")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+    <script>
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+          ["Price", "Size"],
+          [50, 7],
+          [60, 8],
+          [70, 8],
+          [80, 9],
+          [90, 9],
+          [100, 9],
+          [110, 10],
+          [120, 11],
+          [130, 14],
+          [140, 14],
+          [150, 15],
+        ]);
+
+        // Set Options
+        const options = {
+          title: "Teachers' Performent",
+          hAxis: { title: "Time in months" },
+          vAxis: { title: "Rank of students" },
+          legend: "none",
+        };
+
+        // Draw
+        const chart = new google.visualization.LineChart(
+          document.getElementById("myChartline")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+  </body>
+</html>
