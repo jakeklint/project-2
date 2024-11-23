@@ -8,9 +8,7 @@
 body {
   background-color: gray !important;
 }
-.card {
-  background-color: ;
-}
+
 /* nav bar */
 
 .navbar-brand span,
@@ -63,7 +61,6 @@ body {
 }
 .img-paragraph {
   border: 3px solid #02ffff;
-
   font: italic bold 25px "Rubik", sans-serif;
 }
 /* service */
@@ -103,7 +100,8 @@ body {
   border-bottom: 3px solid #02ffff;
 }
 
-#team p {
+#team p,
+#about-us p {
   font: 18px "Rubik", sans-serif;
 }
 /* activities */
@@ -196,6 +194,9 @@ table td {
   height: 200px;
 }
 /* footer */
+footer h3 span {
+  font: bold 30px "Playfair Display", serif;
+}
 footer ul li {
   list-style-type: none;
 }
